@@ -1,0 +1,43 @@
+.projects{
+  padding: 62px 20px 64px;
+  svg{
+    margin: 8px 0 24px;
+  }
+  &__list{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  &__image{
+    width: 444px;
+    height: 240px;
+    border-radius: 15px;
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #FFF;
+    margin: 12px 0;
+  }
+  &__hashes{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  &__hash{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #39965F;
+  }
+  &__medals{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+}

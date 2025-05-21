@@ -1,0 +1,90 @@
+.about{
+  padding: 53px 20px 53px;
+  img{
+    width: 65px;
+    height: 65px;
+  }
+  .title{
+    margin-top: 64px;
+    &:first-child{margin-top: 0;}
+
+  }
+  .subtitle{
+    margin: 24px 0;
+  }
+  svg{
+    margin: 8px 0 24px;
+  }
+  &__abilities{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  &__ability{
+    padding: 36px 82.5px 32px;
+    border: 1.5px solid #4f4f4f;
+    background: #212121;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    &-desk{
+      color: #fff;
+    }
+  }
+  &__cans{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  &__can{
+    padding: 20px;
+    display: flex;
+    gap: 14px;
+    align-items: start;
+    border: 1.5px solid #4f4f4f;
+    background: #212121;
+    border-radius: 15px;
+    img{
+      height: calc(100% - 40px);
+    }
+    .first{
+      padding: 12px;
+      background: teal;
+      border-radius: 15px;
+
+    }
+    .second{
+      padding: 12px;
+      background: #fff;
+    border-radius: 15px;
+
+    }
+    .third{
+      padding: 12px;
+      background: yellow;
+      border-radius: 15px;
+
+    }
+    .last{
+      padding: 12px;
+      background: #00EE7A40;
+      border-radius: 15px;
+    }
+    &-title{
+      color: #fff;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &-desk{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #b7b7b7;
+      margin-top: 6px;
+    }
+  }
+}
