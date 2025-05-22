@@ -8,8 +8,9 @@
     <title>My portfolio</title>
     <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            href="./src/css/aos.css"
     />
+    <link rel="icon" href="./src/assets/portfolio-svgrepo-com.svg">
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
@@ -127,13 +128,13 @@
     </aside>
     <main class="main">
         <section class="hello">
-            <h1 class="title animate__animated animate__backInUp">
+            <h1 data-aos="fade-up" class="title animate__animated animate__backInUp">
                 Hello i am <br> <span> Sagynbekov Nurbol </span>
             </h1>
-            <p class="subtitle animate__animated animate__backInRight">
+            <p data-aos="fade-up" class="subtitle animate__animated animate__backInRight">
                 8 A class student in Zhayil Baatyr High School
             </p>
-            <a href="./pages/en/Projects.html">
+            <a data-aos="fade-up" href="./pages/en/Projects.html">
                 <button class="btn animate__animated animate__backInLeft">
                     Go to achievements
                 </button>
@@ -144,8 +145,13 @@
     <script src="./src/js/main.js">
 
     </script>
+    <script src="./src/js/aos.js">
+
+    </script>
     <script>
-        new WOW().init();
+        AOS.init({
+            once: false
+        });
     </script>
     <script src="
 https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js
