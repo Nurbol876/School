@@ -505,3 +505,115 @@ button {
   line-height: 100%;
   color: #4f4f4f;
 }
+
+@media (max-width: 1100px) {
+  .me {
+    width: 38%;
+  }
+
+  .main__active {
+    padding-left: 38%;
+  }
+
+  .header__list {
+    -webkit-column-gap: 14px;
+       -moz-column-gap: 14px;
+            column-gap: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    gap: 10px;
+  }
+
+  .header__right {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .header__github {
+    width: 28px;
+    height: 28px;
+  }
+
+  .hello {
+    padding: 110px 0;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 10px;
+  }
+
+  .btn {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 24px;
+  }
+
+  .me {
+    width: 82%;
+  }
+
+  .main__active {
+    padding-left: 0;
+  }
+
+  .me__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .about__ability,
+  .connection__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .header__btn {
+    padding: 4px 10px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .hello {
+    padding: 90px 0;
+  }
+
+  .me__link-desk {
+    font-size: 12px;
+    word-break: break-word;
+  }
+
+  .projects,
+  .about,
+  .connection {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
