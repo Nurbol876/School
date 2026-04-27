@@ -77,3 +77,329 @@ button{
 @import "about";
 @import "projects";
 @import "connection";
+
+.container{
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.me{
+  width: 320px;
+  max-width: 86vw;
+  overflow-y: auto;
+}
+
+.main{
+  &__active{
+    padding-left: 320px;
+  }
+}
+
+.about{
+  &__abilities{
+    align-items: stretch;
+  }
+
+  &__ability{
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
+    padding: 28px 20px;
+    text-align: center;
+  }
+
+  &__can{
+    flex: 1 1 calc(50% - 20px);
+    min-width: 280px;
+  }
+}
+
+.projects{
+  &__list{
+    align-items: stretch;
+  }
+
+  .project__item{
+    flex: 1 1 calc(50% - 20px);
+    min-width: 280px;
+  }
+
+  &__image{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__title{
+    line-height: 1.25;
+  }
+
+  &__medals{
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  &__medal{
+    flex: 1 1 220px;
+    min-width: 220px;
+    background: #1b1b1b;
+    border: 1px solid #4f4f4f;
+    border-radius: 15px;
+    padding: 18px;
+    text-align: center;
+  }
+}
+
+.connection{
+  &__list{
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  &__item{
+    width: calc(33.333% - 14px);
+    min-width: 260px;
+  }
+
+  &__subtitle{
+    word-break: break-word;
+    text-align: center;
+    padding: 0 10px;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 1100px){
+  .main{
+    &__active{
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 900px){
+  .header{
+    &__nav{
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+
+    &__right{
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 10px;
+      column-gap: 10px;
+    }
+
+    &__list{
+      display: flex;
+      order: 3;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+      row-gap: 8px;
+      column-gap: 12px;
+    }
+  }
+
+  .about{
+    &__ability{
+      flex-basis: calc(50% - 20px);
+    }
+  }
+
+  .projects{
+    .project__item{
+      flex-basis: 100%;
+    }
+  }
+
+  .connection{
+    &__item{
+      width: calc(50% - 10px);
+      min-width: 230px;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .hello{
+    padding: 120px 0 100px;
+  }
+
+  .title{
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .subtitle{
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px){
+  .container{
+    padding: 0 12px;
+  }
+
+  .header{
+    &__right{
+      display: none;
+    }
+
+    &__list{
+      justify-content: flex-start;
+    }
+
+    &__link{
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    &__github{
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .logo{
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .btn{
+    width: 100%;
+    max-width: 320px;
+    padding: 10px 18px;
+    line-height: 1.3;
+  }
+
+  .title{
+    font-size: 24px;
+    line-height: 1.35;
+  }
+
+  .about{
+    padding: 36px 0 46px;
+
+    &__ability{
+      flex-basis: 100%;
+      min-width: 0;
+    }
+
+    &__can{
+      min-width: 0;
+      flex-basis: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .projects{
+    padding: 36px 0 46px;
+
+    .project__item{
+      min-width: 0;
+    }
+
+    &__image{
+      height: auto;
+    }
+
+    &__medal{
+      min-width: 0;
+      flex-basis: 100%;
+    }
+  }
+
+  .connection{
+    padding: 14px 0 46px;
+
+    &__item{
+      width: 100%;
+      min-width: 0;
+    }
+  }
+
+  .me{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .me__top{
+    display: none;
+  }
+
+  .me__about{
+    display: none;
+  }
+
+  .me__x{
+    top: 12px;
+    right: 12px;
+  }
+
+  .me__links{
+    width: 100%;
+    padding: 56px 14px 24px;
+    row-gap: 12px;
+  }
+
+  .me__link{
+    display: none;
+  }
+
+  .me__mobile-menu{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  .me__mobile-nav{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .me__mobile-nav .header__link{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #313131;
+    border-radius: 10px;
+    background: #212121;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+  }
+
+  .me__mobile-langs{
+    display: flex;
+    gap: 10px;
+  }
+
+  .me__mobile-langs a{
+    flex: 1;
+  }
+
+  .me__mobile-langs .header__btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .me__image{
+    width: 100%;
+    height: auto;
+  }
+
+  .me__link-desk{
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+    word-break: break-word;
+  }
+}
