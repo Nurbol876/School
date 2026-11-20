@@ -1,0 +1,36 @@
+.connection{
+  padding: 20px 20px 64px;
+  &__list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 24px;
+  }
+  &__item{
+    padding: 28px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #1b1b1b;
+    border: 1px solid #4f4f4f;
+    border-radius: 15px;
+    width: 300px;
+  }
+  &__image{
+    width: 64px;
+    height: 64px;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #FFF;
+    margin: 8px 0;
+  }
+  &__subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #4f4f4f;
+  }
+}

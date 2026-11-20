@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", serif;
+  transition: 0.5s ease-in-out all;
+}
+body{
+  background: url("../assets/main/bg.jpg") repeat center ;
+}
+button{
+  cursor: pointer;
+}
+.container{
+  padding: 0 14px;
+}
+.logo{
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -1px;
+  color: #fff;
+  display: flex;
+  column-gap: 0;
+  align-items: center;
+  &__uz{
+    color: #39965F;
+  }
+
+}
+.title{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #ffffff;
+  span{
+    color: #39965F;
+  }
+}
+.subtitle{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #b7b7b7;
+}
+.btn{
+  background: linear-gradient(93.7deg, #39965F 32.68%, #287045 61.31%, #39965F 79.17%);
+  border: 1px solid #39965F;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 8px 44px;
+  color: #fff;
+  border-radius: 15px;
+  &:hover{
+    background: transparent;
+    color: #39965F;
+  }
+}
+
+.main{
+  width: 100%;
+  &__active{
+    padding-left: 25%;
+  }
+}
+.pointer{
+  cursor: pointer;
+}
+@import "main/header";
+@import "main/hello";
+@import "me";
+@import "about";
+@import "projects";
+@import "connection";
